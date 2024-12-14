@@ -1,0 +1,158 @@
+body {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    height: 100vh;               
+    margin: 0;    
+    background-color: rgb(68, 67, 67);
+    flex-direction: column;
+    gap: 10px;
+                   
+}
+ .table{
+    display: flex;
+    text-align: justify;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 4px solid;         
+    border-radius: 10px; 
+    font-size: 18px;  
+    font-family: monospace,sans-serif; 
+    font-weight: bold; 
+    gap: 10px;
+    padding: 10px;                  
+    box-sizing: border-box;             
+    max-width: 650px; 
+    max-height: 250px;  
+    background-color: rgb(163, 235, 235);   
+    box-shadow: -15px 10px 15px  rgb(62, 255, 55);       
+}
+.profile{
+    align-items: center;
+    object-fit: cover;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: 10px solid rgba(61, 255, 55, 0.3);
+    box-shadow: -10px 10px 25px rgb(60, 250, 60);
+}
+.Button{
+display: flex;
+gap: 20px;
+}
+.Button a {
+    margin: auto;
+    color: white;
+    border: 4px solid rgb(117, 253, 89);
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-family: Monospace, Arial;
+    text-decoration: none;
+    font-size: 20px; 
+    box-shadow: 10px 10px 15px rgba(238, 34, 245, 0.3); 
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(54, 54, 54);
+}
+.hobby{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px solid;
+    border-radius: 30%;
+    width: 190px;
+    height: 180px;
+}
+.background-video {
+    position: fixed;       
+    top: 0;                 
+    left: 0;
+    width: 100%;            
+    height: 100%;
+    object-fit: cover;     
+    z-index: -1;            
+}
+a:hover {
+    background-color: rgb(0, 255, 255);
+    color: black;
+    box-shadow: 10px 10px 15px rgb(239, 0, 247);
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 30%;
+    width: 190px;
+    height: 180px;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+@media (max-width: 768px) {
+    .profile {
+        width: 150px;
+        height: 150px;
+    }
+    .items{
+        width: 120px;
+        height: 120px;
+        font-size:15px;
+        padding: 10px;
+    }
+    .skills{
+        width: 100px;
+        height: 100px;
+    }
+    .hobby {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Button a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .table {
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile {
+        width: 100px;
+        height: 100px;
+    }
+    .items{
+        width: 100PX;
+        height: 100PX;
+        font-size:10px;
+        padding: 10px;
+    }
+    .skills{
+        width: 80px;
+        height: 80px;
+    }
+    .hobby {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Button a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .table {
+        gap: 10px;
+        padding: 10px;
+    }
+}
