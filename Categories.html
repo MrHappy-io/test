@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Information</title>
+    <style>
+        body {
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;  
+            gap: 15px;
+            align-items: center; 
+        }
+
+        a {
+            color: white;
+            border: 4px solid rgb(97, 212, 228);
+            border-radius: 60px;
+            padding: 10px 20px;
+            font-family: Monospace, Arial;
+            font-size: 30px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 20px 20px 25px rgba(238, 34, 245, 0.3); 
+            transition: box-shadow 0.5s;
+            background-color: rgb(54, 54, 54);
+            text-align: center;
+        }
+
+        a:hover {
+            box-shadow: 20px 0px 20px rgba(14, 217, 231, 0.6);
+            background-color: aqua;
+            color: black;
+        }
+
+        .profile {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid rgb(151, 73, 252); 
+            box-shadow: 20px 20px 20px rgba(14, 217, 231, 0.3);
+            object-fit: cover;
+        }
+        .background-video {
+            position: fixed;       
+            top: 0;                 
+            left: 0;
+            width: 100%;            
+            height: 100%;
+            object-fit: cover;     
+            z-index: -1;            
+        }
+        @media (max-width: 768px) {
+            .profile {
+                width: 150px;
+                height: 150px;
+            }
+
+            .Button a {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+
+            .table {
+                gap: 15px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile {
+                width: 100px;
+                height: 100px;
+            }
+
+            .Button a {
+                font-size: 14px;
+                padding: 6px 10px;
+            }
+
+            .table {
+                gap: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <video autoplay muted loop class="background-video">
+        <source src="Background-clip.mp4" type="video/mp4">
+    </video>
+    <div class="button-container">
+        <img class="profile" src="profileall.jpeg" alt="Profile Picture">
+        <a href="HOME.html">SELF</a>
+        <a href="ABOUT.html">ABOUT</a>
+        <a href="SKILLS.html">SKILLS</a>
+        <a href="HOBBY.html">HOBBY</a>
+        <a href="CONTACT.html">CONTACT</a>
+    </div>
+</body>
+</html>
